@@ -1,0 +1,6 @@
+[submodule "phy"]
+	path = phy
+	url = https://github.com/kwikteam/phy.git
+[submodule "phy-contrib"]
+	path = phy-contrib
+	url = https://github.com/kwikteam/phy-contrib.git
