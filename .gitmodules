@@ -4,3 +4,9 @@
 [submodule "phy-contrib"]
 	path = phy-contrib
 	url = https://github.com/kwikteam/phy-contrib.git
+[submodule "KiloSort"]
+	path = KiloSort
+	url = https://github.com/cortex-lab/KiloSort.git
+[submodule "npy-matlab"]
+	path = npy-matlab
+	url = https://github.com/kwikteam/npy-matlab.git
