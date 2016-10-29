@@ -1,12 +1,12 @@
 [submodule "phy"]
 	path = phy
-	url = https://github.com/kwikteam/phy.git
+	url = https://github.com/LBHB/phy.git
 [submodule "phy-contrib"]
 	path = phy-contrib
-	url = https://github.com/kwikteam/phy-contrib.git
+	url = https://github.com/LBHB/phy-contrib.git
 [submodule "KiloSort"]
 	path = KiloSort
-	url = https://github.com/cortex-lab/KiloSort.git
+	url = https://github.com/LBHB/KiloSort.git
 [submodule "npy-matlab"]
 	path = npy-matlab
-	url = https://github.com/kwikteam/npy-matlab.git
+	url = https://github.com/LBHB/npy-matlab.git
