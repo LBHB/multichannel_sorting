@@ -25,8 +25,10 @@ baphy_set_path
 edit BaphyConfigPath
 ```
 Add the line:
-' MULTICHANNEL_SORTING_PATH='/auto/users/luke/Code/multichannel_sorting/'; '
-replacing the path with the location you stored the mulitchannel code
+```bash
+MULTICHANNEL_SORTING_PATH='/auto/users/luke/Code/multichannel_sorting/';
+```
+replacing the path with the location you stored the mulitchannel code.
 
 
 ## To Use:
