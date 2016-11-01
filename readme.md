@@ -3,22 +3,24 @@ To Install:_____________________________________________________________________
 
 cd to folder where you want to store the multichannel code
 
-get all the code:
-
+Get all the code:
+~~~~
 git clone https://github.com/LBHB/multichannel_sorting.git
 cd multichannel_sorting
 git submodule init
 git submodule update
-
-set up the python environment for phy:
+~~~~
+Set up the python environment for phy:
+~~~~
 conda env create -n phy
 source activate phy
 pip install -e ./phy
 pip install -e ./phy-contrib
-
+~~~~
+  
 To Use:_________________________________________________________________________
 
-1) The interface with kilosort is stored ib baphy in: baphy/Utilities/KiloSort/
+1) The interface with kilosort is stored in baphy: baphy/Utilities/KiloSort/
 
     run baphy_set_path to add these to your path
 
@@ -31,15 +33,13 @@ To Use:_________________________________________________________________________
     Currently results are save both without modification (in job.results_path)
     and after Kilosort's automerge (which needs improvement) (in [job.results_path,'_after_automerge'] )
     
-    To run phy
-        cd to one of the results directories
-        run:
-            source activate phy
-            phy template-gui params.py
-            
-            A guide to phy is [here](http://phy-contrib.readthedocs.io/en/latest/template-gui)
-            
-            Press ctrl+s at any time to save
+    To run phy, cd to one of the results directories and run:
+~~~~
+        source activate phy
+        phy template-gui params.py
+~~~~
+  A guide to phy is [here](http://phy-contrib.readthedocs.io/en/latest/template-gui)
+  Press ctrl+s at any time to save
 
 5) Write results into baphy format using UTkilosort_load_completed_job.m
 
