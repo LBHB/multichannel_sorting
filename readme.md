@@ -11,13 +11,23 @@ git submodule init
 git submodule update
 (svd maybe necessary?) pip install pyaml
 ```
-Set up the python environment for phy:
+Set up the python environment for phy, make sure you're still in the multichannel_sorting folder, then run:
 ```bash
 conda env create -n phy
 source activate phy
 pip install -e ./phy
 pip install -e ./phy-contrib
 ```
+Add the path to the multichannel code to BaphyConfigPath.m
+In MATLAB:
+```bash
+baphy_set_path
+edit BaphyConfigPath
+```
+Add the line:
+' MULTICHANNEL_SORTING_PATH='/auto/users/luke/Code/multichannel_sorting/'; '
+replacing the path with the location you stored the mulitchannel code
+
 
 ## To Use:
 
