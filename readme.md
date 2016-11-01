@@ -9,6 +9,7 @@ git clone https://github.com/LBHB/multichannel_sorting.git
 cd multichannel_sorting
 git submodule init
 git submodule update
+(svd maybe necessary?) pip install pyaml
 ```
 Set up the python environment for phy:
 ```bash
