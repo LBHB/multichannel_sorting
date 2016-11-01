@@ -1,0 +1,19 @@
+name: phy
+dependencies:
+  - python
+  - numpy
+  - matplotlib
+  - scipy
+  - h5py
+  - cython
+  - pyqt=4
+  - pip:
+    - klusta
+    - klustakwik2
+    - vispy
+    - requests
+    - traitlets
+    - six
+    - joblib
+    - click
+    - tqdm
