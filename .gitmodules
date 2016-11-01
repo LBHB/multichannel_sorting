@@ -10,3 +10,6 @@
 [submodule "npy-matlab"]
 	path = npy-matlab
 	url = https://github.com/LBHB/npy-matlab.git
+[submodule "sortingQuality"]
+	path = sortingQuality
+	url = https://github.com/LBHB/sortingQuality.git
