@@ -1,5 +1,5 @@
 
-______Installation__________________________
+To Install:______________________________________________________________________
 
 cd to folder where you want to store the multichannel code
 
@@ -16,18 +16,18 @@ source activate phy
 pip install -e ./phy
 pip install -e ./phy-contrib
 
-Also needed is the baphy
-
-_______To_Use_____________________
+To Use:_________________________________________________________________________
 
 1) The interface with kilosort is stored ib baphy in: baphy/Utilities/KiloSort/
+
     run baphy_set_path to add these to your path
 
 2) Create a job using UTkilosort_create_job.m 
 
 3) Run all jobs using UTkilosort_run_jobs.m or run one job using UTkilosort_run_job.m
 
-4) One job has finished, view results using phy. 
+4) One job has finished, view results using phy.
+
     Currently results are save both without modification (in job.results_path)
     and after Kilosort's automerge (which needs improvement) (in [job.results_path,'_after_automerge'] )
     
@@ -37,13 +37,14 @@ _______To_Use_____________________
             source activate phy
             phy template-gui params.py
             
-            A guide to phy is here: 
-            http://phy-contrib.readthedocs.io/en/latest/template-gui
+            A guide to phy is [here](http://phy-contrib.readthedocs.io/en/latest/template-gui)
             
             Press ctrl+s at any time to save
 
 5) Write results into baphy format using UTkilosort_load_completed_job.m
+
     Jobs can either be loaded into a temporary file, or onto the server (and celldB)
     
 6) View results using baphy_remote.m or other tools.
+
     Checking temp in baphy_remote allows you to look at the results saved in the temporary file.
