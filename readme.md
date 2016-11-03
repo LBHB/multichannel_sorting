@@ -9,7 +9,7 @@ git clone https://github.com/LBHB/multichannel_sorting.git
 cd multichannel_sorting
 git submodule init
 git submodule update
-(svd maybe necessary?) pip install pyaml
+pip install pyaml  # SVD: may be necessary
 ```
 Set up the python environment for phy, make sure you're still in the multichannel_sorting folder, then run:
 ```bash
@@ -30,6 +30,13 @@ MULTICHANNEL_SORTING_PATH='/auto/users/luke/Code/multichannel_sorting/';
 ```
 replacing the path with the location you stored the mulitchannel code.
 
+## To update:
+
+```bash
+cd multichannel_sorting
+git pull
+git submodule update    #maybe necessary? unless we have appropriate hooks added to the pull command
+```
 
 ## To Use:
 
