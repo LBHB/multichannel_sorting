@@ -1,7 +1,8 @@
 
 ## To Install:
 
-cd to folder where you want to store the multichannel code
+cd to folder where you want to store the multichannel code. 
+The path to this folder is reffered to as <multichannel_sorting_path> throught these instructions
 
 Get all the code:
 ```bash
@@ -18,6 +19,13 @@ source activate phy
 pip install -e ./phy
 pip install -e ./phy-contrib
 ```
+To add the LBHB phy-config plugins to phy, add the following lines to ~/.phy/phy_config.py
+```bash
+c.Plugins.dirs = [r'/home/luke/.phy/plugins/','<multichannel_sorting_path>/phy-contrib/phycontrib/LBHB_plugins/']
+c.TemplateGUI.plugins = ['AmplitudeHistogram','ChannelExportUpdate','ISIView','PlotClusterLocations','SpikeHeight','TraceViewUpdate','ExportMeanWaveforms']
+```
+Add or remove plgins by modifying c.TemplateGUI.plugins
+
 Add the path to the multichannel code to BaphyConfigPath.m
 In MATLAB:
 ```bash
@@ -26,9 +34,9 @@ edit BaphyConfigPath
 ```
 Add the line:
 ```bash
-MULTICHANNEL_SORTING_PATH='/auto/users/luke/Code/multichannel_sorting/';
+MULTICHANNEL_SORTING_PATH=<multichannel_sorting_path>;
 ```
-replacing the path with the location you stored the mulitchannel code.
+replacing <multichannel_sorting_path> with the location you stored the mulitchannel code, including a trailing slash.
 
 ## To update:
 
@@ -67,3 +75,7 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
 6. View results using baphy_remote.m or other tools.
 
     Checking temp in baphy_remote allows you to look at the results saved in the temporary file.
+    
+## Good things to know:
+
+1. Spike templates are created by KiloSort. Templates shown in phy (pressing 'w' alternates between showing template and selected waveforms and sowing tempates only) are scaled by the mean fit (by Kilosort) amplitude of the selected waveforms. If you split a cluster the templates shown for the two may be scaled differently, but are still just one underlying template.
