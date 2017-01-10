@@ -14,7 +14,7 @@ to start the merging program. Select the results (or results_after_automerge) fo
 3. Change any matches that should be changed.
 4. Move all low SNR clusters to the noise channel by clicking on Merge-> Move low-snr clusters to noise. This will create a new label "noise" and assign it to all slave clusters with snr < 0.5.
 5. Save by going to Merge->save cluster associations
-    5a. If there are master clusters that are matched with multiple slaves, the program will ask you if you'd like to merge them. In most circumstances you should say yes. If this slave job is to be used as a master in another merge, this will make it so there is only once cluster for each channel/unit number combination. Review the merges it made and then press save again.
+    * If there are master clusters that are matched with multiple slaves, the program will ask you if you'd like to merge them. In most circumstances you should say yes. If this slave job is to be used as a master in another merge, this will make it so there is only once cluster for each channel/unit number combination. Review the merges it made and then press save again.
 
 
 
