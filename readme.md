@@ -22,7 +22,7 @@ pip install -e ./phy-contrib
 To add the LBHB phy-config plugins to phy, add the following lines to ~/.phy/phy_config.py
 ```bash
 c.Plugins.dirs = [r'/home/luke/.phy/plugins/','<multichannel_sorting_path>/phy-contrib/phycontrib/LBHB_plugins/']
-c.TemplateGUI.plugins = ['AmplitudeHistogram','ChannelExportUpdate','ISIView','PlotClusterLocations','SpikeHeight','TraceViewUpdate','ExportMeanWaveforms']
+c.TemplateGUI.plugins = c.TemplateGUI.plugins = ['AmplitudeHistogram','ChannelExportUpdate','ISIView','PlotClusterLocations','SpikeSNR','TraceViewUpdate','ExportMeanWaveforms','MergeRuns','ExportSNRs','FeatureTemplateTimeView']
 ```
 Add or remove plgins by modifying c.TemplateGUI.plugins
 
@@ -79,3 +79,5 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
 ## Good things to know:
 
 1. Spike templates are created by KiloSort. Templates shown in phy (pressing 'w' alternates between showing template and selected waveforms and sowing tempates only) are scaled by the mean fit (by Kilosort) amplitude of the selected waveforms. If you split a cluster the templates shown for the two may be scaled differently, but are still just one underlying template.
+
+2. You can merge two Kilosort runs by using the [merging plugin](Merging_Runs.md)
