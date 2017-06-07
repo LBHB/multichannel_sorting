@@ -82,7 +82,7 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
   ```bash
     source activate phy
     phy template-gui params.py
-    ```
+```
   
 4. View results using baphy_remote.m or other tools.
 
