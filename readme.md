@@ -79,12 +79,11 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
             * If "Delete existing file" is checked, any existing spike sorting results will be overwritten. Otherwise, the new results will be appended.
         
   3a. To run phy from the terminal instead of using the Kilosort browser, cd to one of the results directories and run:
-  
-    ```bash
+  ```bash
     source activate phy
     phy template-gui params.py
     ```
-    
+  
 4. View results using baphy_remote.m or other tools.
 
     * Checking "temp" in baphy_remote allows you to look at the results saved in the temporary file.
