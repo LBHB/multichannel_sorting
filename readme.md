@@ -49,12 +49,12 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
 ## To Use:
 
 1. The interface with Kilosort is stored in baphy: baphy/Utilities/KiloSort/
-    run baphy_set_path to add these to your path
+	* run ```baphy_set_path``` to add these to your path
 
-2. Create a job using UTkilosort_create_job.m or UTkilosort_create_job_tetrode.m
+2. Create a job using ```UTkilosort_create_job``` or ```UTkilosort_create_job_tetrode```
 
-	* Unless the section at the end of UTkilosort_create_job.m is turned off, jobs will be automatically   added to the hyrax job queue and ran one at a 	time, using the GPU on hyena.
-	* Use UTkilosort_run_job.m to run a job locally on your machine, set job.GPU to 0 unless you have a GPU.
+	* Unless the section at the end of ```UTkilosort_create_job.m``` is turned off, jobs will be automatically   added to the hyrax job queue and ran one at a 	time, using the GPU on hyena.
+	* Use ```UTkilosort_run_job``` to run a job locally on your machine, set job.GPU to 0 unless you have a GPU.
 	* Currently results are saved both without modification (in job.results_path)
     and after Kilosort's automerge (which needs improvement) (in [job.results_path,'_after_automerge'] )
 
@@ -79,7 +79,8 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
             * If "Delete existing file" is checked, any existing spike sorting results will be overwritten. Otherwise, the new results will be appended.
         
   3a. To run phy from the terminal instead of using the Kilosort browser, cd to one of the results directories and run:
-    ```bash
+  
+    ```
     source activate phy
     phy template-gui params.py
     ```
