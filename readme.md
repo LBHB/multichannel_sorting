@@ -80,7 +80,7 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
         
   3a. To run phy from the terminal instead of using the Kilosort browser, cd to one of the results directories and run:
   
-    ```
+    ```bash
     source activate phy
     phy template-gui params.py
     ```
