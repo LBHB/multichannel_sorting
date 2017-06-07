@@ -84,9 +84,9 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
     phy template-gui params.py
 ```
   
-4. View results using baphy_remote.m or other tools.
+4. View results using `baphy_remote` or other tools.
 
-    * Checking "temp" in baphy_remote allows you to look at the results saved in the temporary file.
+    * Checking "temp" in `baphy_remote` allows you to look at the results saved in the temporary file.
     
 ## Good things to know:
 
