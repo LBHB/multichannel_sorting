@@ -72,11 +72,11 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
     * Review and make any adjustments necessary.
        * A guide to phy is [here](http://phy-contrib.readthedocs.io/en/latest/template-gui). In particular, the [typical approach to manual clustering](http://phy-contrib.readthedocs.io/en/latest/template-gui/#a-typical-approach-to-manual-clustering) is useful. I would add a step 2a: use the amplitude histogram to check that there aren't too many missing spikes (typically less than 2%).
        * LBHB additions to phy:
-           * ISI hsitogram as an alternative to the correlation histograms.
-           * Spike SNR: the standard deviation of the mean spike waveform divided by the standard deviation of times when spikes are not occuring. Use this to quicky find good and bad clusters.
-           * [Merge runs plugin](Merging_Runs.md)
+           * ISI histogram as an alternative to the correlation histograms.
+           * Spike SNR: the standard deviation of the mean spike waveform divided by the standard deviation of waveforms over times when spikes are not occuring. Use this to quicky find good and bad clusters.
            * NextSpikePairUpdate: skips the traceview to window around pairs of spikes ordered by interspike interval. Shortcut is Alt-Shift-PgDown and Alt-Shift-PgUp. If only one cluster is selected this will skip to the closest pair of spikes within that cluster. If two clusters are selected this will skip to the closest pair of spikes across the clusters.
            * FeatureTemplatetime: shows a projection of the spikes onto first template dimension of the first selected cluster (blue). Lines indicate divisions in time between two different runs (stimuli).
+           * [Merge runs plugin](Merging_Runs.md)
        * Press ctrl+s at any time to save
     
      *  Write the results into baphy format by pressing "Save to database"
