@@ -49,7 +49,7 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
 ## To Use:
 
 1. The interface with Kilosort is stored in baphy: baphy/Utilities/KiloSort/
-	* run ```baphy_set_path``` to add these to your path
+	* run ```baphy_set_path``` to add it to your path
 
 2. Create a job using ```UTkilosort_create_job``` or ```UTkilosort_create_job_tetrode```
 
