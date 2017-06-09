@@ -74,9 +74,11 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
        * LBHB additions to phy:
            * ISI histogram as an alternative to the correlation histograms.
            * Spike SNR: the standard deviation of the mean spike waveform divided by the standard deviation of waveforms over times when spikes are not occuring. Use this to quicky find good and bad clusters.
-           * NextSpikePairUpdate: skips the traceview to window around pairs of spikes ordered by interspike interval. Shortcut is Alt-Shift-PgDown and Alt-Shift-PgUp. If only one cluster is selected this will skip to the closest pair of spikes within that cluster. If two clusters are selected this will skip to the closest pair of spikes across the clusters.
-           * FeatureTemplatetime: shows a projection of the spikes onto first template dimension of the first selected cluster (blue). Lines indicate divisions in time between two different runs (stimuli).
+           * NextSpikePairUpdate: skips the TraceView to window around pairs of spikes ordered by interspike interval. Shortcut is Alt-Shift-PgDown and Alt-Shift-PgUp. If only one cluster is selected this will skip to the closest pair of spikes within that cluster. If two clusters are selected this will skip to the closest pair of spikes across the clusters.
+           * FeatureTemplatetime: shows a projection of the spikes onto first template dimension of the first selected cluster (blue) vs time. Lines indicate divisions in time between different runs. Hold down Cntrl and left-click at a time to skip the TraceView to be centered on that time.
            * [Merge runs plugin](Merging_Runs.md)
+       * Undocumented phy features that are good to know:
+           * Hold down the right mouse button and move around to zoom and change the aspect ratio.
        * Press ctrl+s at any time to save
     
      *  Write the results into baphy format by pressing "Save to database"
