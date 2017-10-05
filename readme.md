@@ -51,9 +51,11 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
 1. The interface with Kilosort is stored in baphy: baphy/Utilities/KiloSort/
 	* run ```baphy_set_path``` to add it to your path
 
-2. Create a job using ```UTkilosort_create_job``` or ```UTkilosort_create_job_tetrode```
+2. Create a job using ```UTkilosort_create_job``` or ```UTkilosort_create_job_tetrode```. Right now there is no   GUI, so you will have to ```edit UTkilosort_creat_job``` and change the animal name, the site, and the run_nums variables to the desired ones. 
 
 	* Unless the section at the end of ```UTkilosort_create_job.m``` is turned off, jobs will be automatically   added to the hyrax job queue and ran one at a 	time, using the GPU on hyena.
+	* Check [CelldB Jobs](http://hyrax.ohsu.edu/celldb/queuemonitor.php?user=%25&complete=-1&machinename=%25&notemask=kilo) to make sure the kilosort job started correctly. 
+	* If you don't see the job, check to see what's running on [Hyena](http://hyrax.ohsu.edu/celldb/queuemonitor.php?user=%25&complete=-1&machinename=hyena&notemask=) and kill a job that has been running for a short about of time.
 	* Use ```UTkilosort_run_job``` to run a job locally on your machine, set job.GPU to 0 unless you have a GPU.
 	* Currently results are saved both without modification (in job.results_path)
     and after Kilosort's automerge (which needs improvement) (in [job.results_path,'_after_automerge'] )
