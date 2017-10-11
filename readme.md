@@ -20,8 +20,8 @@ pip install -e ./phy
 pip install -e ./phy-contrib
 ```
 To add the LBHB phy-config plugins to phy, add the following lines to ~/.phy/phy_config.py
-
-Replace \<username> with your user name. Replace <multichannel_sorting_path> with the path where you stored the multichannel code.
+Replace \<username> with your user name. 
+Replace <multichannel_sorting_path> with the path where you stored the multichannel code.
 ```bash
 c.Plugins.dirs = [r'/home/<username>/.phy/plugins/','<multichannel_sorting_path>/phy-contrib/phycontrib/LBHB_plugins/']
 c.TemplateGUI.plugins = ['AmplitudeHistogram','ChannelExportUpdate','ISIView','PlotClusterLocations','SpikeSNR','ExportMeanWaveforms','MergeRuns','ExportSNRs','NextSpikePairUpdate','FeatureTemplateTime']
