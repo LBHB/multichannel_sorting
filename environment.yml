@@ -1,7 +1,7 @@
 name: phy
 dependencies:
   - python
-  - numpy
+  - numpy=1.11.*
   - matplotlib
   - scipy
   - h5py
