@@ -105,3 +105,4 @@ git submodule update    #maybe necessary? unless we have appropriate hooks added
 1. Spike templates are created by KiloSort. Templates shown in phy (pressing 'w' alternates between showing template and selected waveforms and sowing tempates only) are scaled by the mean fit (by Kilosort) amplitude of the selected waveforms. If you split a cluster the templates shown for the two may be scaled differently, but are still just one underlying template.
 
 2. You can merge two Kilosort jobs by using the [merging plugin](Merging_Runs.md)
+
