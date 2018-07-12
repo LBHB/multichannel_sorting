@@ -24,7 +24,7 @@ Replace \<username> with your user name.
 Replace <multichannel_sorting_path> with the path where you stored the multichannel code.
 ```bash
 c.Plugins.dirs = [r'/home/<username>/.phy/plugins/','<multichannel_sorting_path>/phy-contrib/phycontrib/LBHB_plugins/']
-c.TemplateGUI.plugins = ['AmplitudeHistogram','ChannelExportUpdate','ISIView','PlotClusterLocations','SpikeSNR','ExportMeanWaveforms','MergeRuns','ExportSNRs','NextSpikePairUpdate','FeatureTemplateTime', 'cell_types']
+c.TemplateGUI.plugins = ['AmplitudeHistogram','ChannelExportUpdate','ISIView','PlotClusterLocations','SpikeSNR','ExportMeanWaveforms','MergeRuns','ExportSNRs','NextSpikePairUpdate','FeatureTemplateTime', 'cell_types','CopyTraceView']
 ```
 Add or remove plgins by modifying c.TemplateGUI.plugins
 
