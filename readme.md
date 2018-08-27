@@ -41,6 +41,8 @@ MULTICHANNEL_SORTING_PATH=<multichannel_sorting_path>;
 ```
 replacing <multichannel_sorting_path> with the location you stored the mulitchannel code, including a trailing slash.
 
+If you haven't done this already for some other reason, set up you computer to be able to run jobs on the cluster. Brief instructions [here](http://hyrax.ohsu.edu/treeki/tree.php?pid=118) under Configuring linux for batching. More detailed instruction should be added here...
+
 ## To update:
 
 ```bash
