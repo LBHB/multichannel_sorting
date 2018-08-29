@@ -1,7 +1,7 @@
 
 ## To Install:
 
-cd to folder where you want to store the multichannel code.
+In a terminal, navigate to a folder where you want to store the multichannel code.
 The path to this folder is referred to as &lt;multichannel_sorting_path&gt; throughout these instructions
 
 Get all the code:
