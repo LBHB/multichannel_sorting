@@ -19,10 +19,15 @@ source activate phy
 pip install -e ./phy
 pip install -e ./phy-contrib
 ```
+If you want the CellTypes plugin (FS/RS classification) to work, you must make sure that sklearn is installed inside of your phy environment. To do this, while still in the phy environment, run:
+```bash
+`pip install sklearn`
+```
+
 To add the LBHB phy-config plugins to phy, add the following lines to ~/.phy/phy_config.py
 Replace \<username> with your user name. 
 Replace <multichannel_sorting_path> with the path where you stored the multichannel code.
-NOTE: If you want the CellTypes plugin (FS/RS classification) to work, you must make sure that sklearn is installed inside of your phy environment. To do this, run `source activate phy` from a terminal window and then run `pip install sklearn`
+
 ```bash
 c.Plugins.dirs = [r'/home/<username>/.phy/plugins/','<multichannel_sorting_path>/phy-contrib/phycontrib/LBHB_plugins/']
 c.TemplateGUI.plugins = ['AmplitudeHistogram','ChannelExportUpdate','ISIView','PlotClusterLocations','SpikeSNR','ExportMeanWaveforms','MergeRuns','ExportSNRs','NextSpikePairUpdate','FeatureTemplateTime', 'CellTypes','CopyTraceView']
@@ -41,7 +46,7 @@ MULTICHANNEL_SORTING_PATH=<multichannel_sorting_path>;
 ```
 replacing <multichannel_sorting_path> with the location you stored the mulitchannel code, including a trailing slash.
 
-If you haven't done this already for some other reason, set up you computer to be able to run jobs on the cluster. Brief instructions [here](http://hyrax.ohsu.edu/treeki/tree.php?pid=118) under Configuring linux for batching. More detailed instruction should be added here...
+If you haven't done this already for some other reason, set up you computer to be able to run jobs on the cluster. Brief instructions [here](http://hyrax.ohsu.edu/treeki/tree.php?pid=118) under **Configuring linux for batching**. More detailed instruction should be added here...
 
 ## To update:
 
