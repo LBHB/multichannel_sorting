@@ -21,7 +21,7 @@ pip install -e ./phy-contrib
 ```
 If you want the CellTypes plugin (FS/RS classification) to work, you must make sure that sklearn is installed inside of your phy environment. To do this, while still in the phy environment, run:
 ```bash
-`pip install sklearn`
+pip install sklearn
 ```
 
 To add the LBHB phy-config plugins to phy, add the following lines to ~/.phy/phy_config.py
