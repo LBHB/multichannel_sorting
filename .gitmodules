@@ -14,5 +14,5 @@
 	path = sortingQuality
 	url = https://github.com/LBHB/sortingQuality.git
 [submodule "Kilosort2"]
-	path = Kilosort2
+	path = KiloSort2
 	url = https://github.com/LBHB/Kilosort2.git
