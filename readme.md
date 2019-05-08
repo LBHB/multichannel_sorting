@@ -53,7 +53,8 @@ If you haven't done this already for some other reason, set up you computer to b
 ```bash
 cd multichannel_sorting
 git pull
-git submodule update    #maybe necessary? unless we have appropriate hooks added to the pull command
+git submodule update --init   #maybe necessary? unless we have appropriate hooks added to the pull command
+#(--init *may* take care of pulling any submodule added since the last pull)
 ```
 
 ## To Use:
