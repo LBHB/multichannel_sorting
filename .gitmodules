@@ -16,3 +16,6 @@
 [submodule "Kilosort2"]
 	path = KiloSort2
 	url = https://github.com/LBHB/Kilosort2.git
+[submodule "phy-plugins"]
+	path = phy-plugins
+	url = git@github.com:LBHB/phy-plugins.git
