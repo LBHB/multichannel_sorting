@@ -19,3 +19,6 @@
 [submodule "phy-plugins"]
 	path = phy-plugins
 	url = git@github.com:LBHB/phy-plugins.git
+[submodule "KiloSort2pt5"]
+	path = KiloSort2pt5
+	url = ./KiloSort2pt5/
