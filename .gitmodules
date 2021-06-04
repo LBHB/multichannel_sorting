@@ -5,7 +5,7 @@
 	path = phy-contrib
 	url = https://github.com/LBHB/phy-contrib.git
 [submodule "KiloSort"]
-	path = KiloSort
+	path = KiloSort3
 	url = https://github.com/LBHB/KiloSort.git
 [submodule "npy-matlab"]
 	path = npy-matlab
