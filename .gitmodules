@@ -22,3 +22,6 @@
 [submodule "KiloSort2pt5"]
 	path = KiloSort2pt5
 	url = ./KiloSort2pt5/
+[submodule "phylib"]
+	path = phylib
+	url = ./phylib
