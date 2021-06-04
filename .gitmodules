@@ -1,9 +1,6 @@
 [submodule "phy"]
 	path = phy
 	url = https://github.com/LBHB/phy.git
-[submodule "phy-contrib"]
-	path = phy-contrib
-	url = https://github.com/LBHB/phy-contrib.git
 [submodule "KiloSort"]
 	path = KiloSort3
 	url = https://github.com/LBHB/KiloSort.git
