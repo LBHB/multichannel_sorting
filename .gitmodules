@@ -24,4 +24,4 @@
 	url = https://github.com/LBHB/phylib.git
 [submodule "BaphyKiloSort"]
 	path = BaphyKiloSort
-	url = ./BaphyKiloSort/
+	url = https://github.com/LBHB/BaphyKiloSort.git
