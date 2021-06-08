@@ -1,5 +1,46 @@
+## To set-up using the copy in /auto/users/lbhb/:
 
-## To Install:
+If you don't have a copy of baphy already:
+1. Checkout a copy of [baphy](https://bitbucket.org/lbhb/baphy/)
+2. Start MATLAB, make sure baphy is in your path, and run:
+```bash
+baphy_set_path
+```
+3. Choose lbhb as the lab
+
+Whether or not you already have baphy:
+1. Add the path to the multichannel code to BaphyConfigPath.m:  
+In MATLAB:  
+	```bash
+	baphy_set_path
+	edit BaphyConfigPath
+	```
+	Add or modify the line the line:  
+	```bash
+	MULTICHANNEL_SORTING_PATH='/auto/users/lbhb/Code/multichannel_sorting/';
+	```
+2. Make/update your copy of phy_config.py to use lbhb plugins:  
+In bash:
+```bash
+mkdir ~/.phy
+sudo cp /auto/users/lbhb/Code/multichannel_sorting/phy_config.py ~/.phy/phy_config.py
+```
+
+## To use the copy in /auto/users/lbhb/:
+1.Start a new job by filling in options and running UTkilosort2_create_job_wrapper (replace with what you need):  
+In MATLAB:  
+`options.animal='Tabor';`  
+`opions.site='TBR009a';`  
+`options.run_nums=1:2;` or `options.run_nums='all';`  
+`options.channel_map='64D_slot2_bottom';`  
+By default KiloSort 2 is used. To use 2.5 or 3, add  
+`options.KSversion=2.5` or `options.KSversion=3`  
+To start the job, run:  
+`UTkilosort2_create_job_wrapper(options)`  
+
+
+
+## OLD Install Instructions:
 
 In a terminal, navigate to a folder where you want to store the multichannel code.
 The path to this folder is referred to as &lt;multichannel_sorting_path&gt; throughout these instructions
