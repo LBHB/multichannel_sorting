@@ -8,6 +8,9 @@ baphy_set_path
 ```
 3. Choose lbhb as the lab
 
+<b>If you already have a copy of baphy:</b>
+1. Pull the latest version  
+
 <b>Whether or not you already have baphy:</b>
 1. Add the path to the multichannel code to BaphyConfigPath.m:  
 In MATLAB:  
