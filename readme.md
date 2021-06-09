@@ -19,19 +19,19 @@ In MATLAB:
 	```bash
 	MULTICHANNEL_SORTING_PATH='/auto/users/lbhb/Code/multichannel_sorting/';
 	```
-2. Make/update your copy of phy_config.py to use lbhb plugins: 
-This will overwrite you phy_config.py file. Mayabe make backup if you changed it. 
+2. Make/update your copy of phy_config.py to use lbhb plugins:  
+This will overwrite your phy_config.py file. Maybe make backup if you changed it.  
 In bash:
-```bash
-mkdir ~/.phy
-sudo cp /auto/users/lbhb/Code/multichannel_sorting/phy_config.py ~/.phy/phy_config.py
-```
+	```bash
+	mkdir ~/.phy
+	sudo cp /auto/users/lbhb/Code/multichannel_sorting/phy_config.py ~/.phy/phy_config.py
+	```
 
 3. Create a smylink to the lbhb phy enironment:  
 In bash:
-```bash
-sudo ln -s /auto/users/lbhb/Code/miniconda3/envs/phy2/bin/phy /usr/local/bin/phy_lbhb
-```
+	```bash
+	sudo ln -s /auto/users/lbhb/Code/miniconda3/envs/phy2/bin/phy /usr/local/bin/phy_lbhb
+	```
 
 ## To use the copy in /auto/users/lbhb/:
 1. Start a new job by filling in options and running UTkilosort2_create_job_wrapper (replace with what you need):  
