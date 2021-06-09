@@ -29,7 +29,7 @@ sudo cp /auto/users/lbhb/Code/multichannel_sorting/phy_config.py ~/.phy/phy_conf
 3. Create a smylink to the lbhb phy enironment:  
 In bash:
 ```bash
-ln -s /auto/users/lbhb/Code/miniconda3/envs/phy2/bin/phy /usr/local/bin/phy_lbhb
+sudo ln -s /auto/users/lbhb/Code/miniconda3/envs/phy2/bin/phy /usr/local/bin/phy_lbhb
 ```
 
 ## To use the copy in /auto/users/lbhb/:
