@@ -19,7 +19,8 @@ In MATLAB:
 	```bash
 	MULTICHANNEL_SORTING_PATH='/auto/users/lbhb/Code/multichannel_sorting/';
 	```
-2. Make/update your copy of phy_config.py to use lbhb plugins:  
+2. Make/update your copy of phy_config.py to use lbhb plugins: 
+This will overwrite you phy_config.py file. Mayabe make backup if you changed it. 
 In bash:
 ```bash
 mkdir ~/.phy
