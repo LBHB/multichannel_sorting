@@ -1,6 +1,6 @@
 ## To set-up using the copy in /auto/users/lbhb/:
 
-If you don't have a copy of baphy already:
+<b>If you don't have a copy of baphy already:</b>
 1. Checkout a copy of [baphy](https://bitbucket.org/lbhb/baphy/)
 2. Start MATLAB, make sure baphy is in your path, and run:
 ```bash
@@ -8,7 +8,7 @@ baphy_set_path
 ```
 3. Choose lbhb as the lab
 
-Whether or not you already have baphy:
+<b>Whether or not you already have baphy:</b>
 1. Add the path to the multichannel code to BaphyConfigPath.m:  
 In MATLAB:  
 	```bash
