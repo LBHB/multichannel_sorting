@@ -17,7 +17,7 @@ c = get_config()
 if isV2:
     lbhb_plugin_dir = '/auto/users/lbhb/Code/multichannel_sorting/phy-plugins/'
     lbhb_plugins = files = os.listdir(lbhb_plugin_dir)
-    lbhb_plugins = [file[:-3] for file in lbhb_plugins if file.count('.py')==1]
+    lbhb_plugins = [file[:-3] for file in lbhb_plugins if file[-3:] == '.py']
     c.Plugins.dirs = [r'~/.phy/plugins/', lbhb_plugin_dir]
     user_plugins = [] # Put the names to any new plugins you want to try out here
     c.TemplateGUI.plugins = lbhb_plugins + user_plugins
