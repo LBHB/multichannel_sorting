@@ -25,3 +25,6 @@
 [submodule "BaphyKiloSort"]
 	path = BaphyKiloSort
 	url = https://github.com/LBHB/BaphyKiloSort.git
+[submodule "open-ephys-matlab-tools"]
+	path = open-ephys-matlab-tools
+	url = https://github.com/open-ephys/open-ephys-matlab-tools.git
